@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zephyr Store</title>
+  <link rel="stylesheet" href="../css/men.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <script src="../js/men.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="navleft">
+        <a href="index.html"><img src="../images/LOGO.jpeg" alt=""></a>
+
+        <ul class="navmenu">
+          <li>
+            <a href="men.html">MEN</a>
+            <div class="mendrop">
+              <ul>
+                <div class="column">
+                  <h4>Topwear</h4>
+                  <a href="men.html?category=tshirts">T-Shirts</a>
+                  <a href="men.html?category=cshirts">Casual Shirts</a>
+                  <a href="men.html?category=fshirts">Formal Shirts</a>
+                  <a href="men.html?category=sshirts">Sweatshirts</a>
+                </div>
+                <div class="column">
+                  <h4>Bottomwear</h4>
+                  <a href="men.html?category=jeans">Jeans</a>
+                  <a href="men.html?category=ctrouser">Casual Trousers</a>
+                  <a href="men.html?category=shorts">Shorts</a>
+                  <a href="men.html?category=jogger">Joggers</a>
+                  <a href="men.html?category=tracks">Tracks</a>
+                </div>
+                <div class="column">
+                  <h4>Footwear</h4>
+                  <a href="men.html?category=cshoes">Casual Shoes</a>
+                  <a href="men.html?category=sneaker">Sneakers</a>
+                  <a href="men.html?category=flipflop">Flip Flops</a>
+                </div>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="women.html">WOMEN</a>
+            <div class="mendrop">
+              <ul>
+                <div class="column">
+                  <h4>Topwear</h4>
+                  <a href="#">T-Shirts</a>
+                  <a href="#">Casual Shirts</a>
+                  <a href="#">Sweatshirts</a>
+                  <a href="#">Dresses</a>
+                </div>
+                <div class="column">
+                  <h4>Bottomwear</h4>
+                  <a href="#">Jeans</a>
+                  <a href="#">Tracks</a>
+                  <a href="#">Joggers</a>
+                </div>
+                <div class="column">
+                  <h4>Footwear</h4>
+                  <a href="#">Casual Shoes</a>
+                  <a href="#">Sneakers</a>
+                  <a href="#">Flip Flops</a>
+                </div>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">TECH</a>
+            <div class="mendrop">
+              <ul>
+                <div class="column">
+                  <h4>Watches</h4>
+                  <a href="#">Smart Watches</a>
+                  <a href="#">Anologue Watches</a>
+                  <a href="#">Watch Straps</a>
+                </div>
+                <div class="column">
+                  <h4>Audio</h4>
+                  <a href="#">Headphones</a>
+                  <a href="#">Speakers</a>
+                  <a href="#">Wireless</a>
+                  <a href="#">Mirrors</a>
+                  <a href="#">Vases</a>
+                </div>
+                <div class="column">
+                  <h4>Bath</h4>
+                  <a href="#">Bath Towels</a>
+                  <a href="#">Bathroom Accessories</a>
+                  <a href="#">Bath Robes</a>
+                </div>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">HOME & LIVING</a>
+            <div class="mendrop">
+              <ul>
+                <div class="column">
+                  <h4>Bed & Furnishing</h4>
+                  <a href="#">Bed Linen</a>
+                  <a href="#">Blankets</a>
+                  <a href="#">Pillow & Pillowcovers</a>
+                  <a href="#">Comforters</a>
+                </div>
+                <div class="column">
+                  <h4>Home Decor</h4>
+                  <a href="#">Plants</a>
+                  <a href="#">Aromas</a>
+                  <a href="#">Clocks</a>
+                  <a href="#">Mirrors</a>
+                  <a href="#">Vases</a>
+                </div>
+                <div class="column">
+                  <h4>Bath</h4>
+                  <a href="#">Bath Towels</a>
+                  <a href="#">Bathroom Accessories</a>
+                  <a href="#">Bath Robes</a>
+                </div>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">BEAUTY</a></li>
+        </ul>
+      </div>
+
+      <div class="navright">
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="searchInput" placeholder="Search for products, brands, and more...">
+          <div id="searchResults" class="search-results"></div>
+        </div>
+      </div>
+
+
+      <div>
+        <i class="fa-regular fa-user"></i>
+        <p>Profile</p>
+      </div>
+      <div>
+        <i class="fa-regular fa-heart"></i>
+        <p>Wishlist</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-bag-shopping"></i>
+        <p>Bag</p>
+      </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <div class="off">
+    <img draggable="false" class="offer" src="../images/Red and Black Modern Black Friday Banner.png" srcset="">
+  </div>
+  <br><br>
+
+  <div class="leftsort">
+    <div class="filter-section">
+      <div class="filter-category">
+        <button class="dropdown-btn">Gender <img src="../images/icons/down-arrow.png" alt="" class="drpicon"></button>
+
+        <div class="dropdown-content">
+          <label><input type="checkbox"> Men</label>
+          <label><input type="checkbox"> Women</label>
+          <label><input type="checkbox"> Unisex</label>
+        </div>
+      </div>
+
+      <div class="filter-category">
+        <button class="dropdown-btn">Size <img src="../images/icons/down-arrow.png" alt="" class="drpicon"></button>
+        <div class="dropdown-content">
+          <label><input type="checkbox"> S</label>
+          <label><input type="checkbox"> M</label>
+          <label><input type="checkbox"> L</label>
+          <label><input type="checkbox"> XL</label>
+        </div>
+      </div>
+
+      <div class="filter-category">
+        <button class="dropdown-btn">Brand <img src="../images/icons/down-arrow.png" alt="" class="drpicon"></button>
+        <div class="dropdown-content">
+          <label><input type="checkbox"> Puma</label>
+          <label><input type="checkbox"> Nike</label>
+          <label><input type="checkbox"> Kappa</label>
+          <label><input type="checkbox"> Superdry</label>
+          <label><input type="checkbox"> H&M</label>
+        </div>
+      </div>
+
+      <div class="filter-category">
+        <button class="dropdown-btn">Occasion <img src="../images/icons/down-arrow.png" alt="" class="drpicon"></button>
+        <div class="dropdown-content">
+          <label><input type="checkbox"> Casual</label>
+          <label><input type="checkbox"> Formal</label>
+          <label><input type="checkbox"> Party</label>
+        </div>
+      </div>
+
+      <div class="filter-category">
+        <button class="dropdown-btn">Color <img src="../images/icons/down-arrow.png" alt="" class="drpicon"></button>
+        <div class="dropdown-content">
+          <label><input type="checkbox"> Black</label>
+          <label><input type="checkbox"> White</label>
+          <label><input type="checkbox"> Blue</label>
+          <label><input type="checkbox"> Yellow</label>
+        </div>
+      </div>
+
+      <div class="filter-category">
+        <button class="dropdown-btn">Material <img src="../images/icons/down-arrow.png" alt="" class="drpicon"></button>
+        <div class="dropdown-content">
+          <label><input type="checkbox"> Cotton</label>
+          <label><input type="checkbox"> Polyester</label>
+          <label><input type="checkbox"> Wool</label>
+        </div>
+      </div>
+
+      <div class="filter-category">
+        <button class="dropdown-btn">Neck Type <img src="../images/icons/down-arrow.png" alt=""
+            class="drpicon"></button>
+        <div class="dropdown-content">
+          <label><input type="checkbox"> Round</label>
+          <label><input type="checkbox"> V-Neck</label>
+          <label><input type="checkbox"> Collar</label>
+        </div>
+      </div>
+
+      <div class="filter-category">
+        <button class="dropdown-btn">Price <img src="../images/icons/down-arrow.png" alt="" class="drpicon"></button>
+        <div class="dropdown-content">
+          <input type="range" id="priceRange" min="100" max="5000" value="1000">
+          <p>₹ <span id="priceValue">1000</span></p>
+        </div>
+      </div>
+
+      <div class="filter-category">
+        <button class="dropdown-btn">Discount Price </button>
+        <div class="dropdown-content">
+          <input type="range" id="discountRange" min="0" max="50" value="10">
+          <p><span id="discountValue">10</span>% Off</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="product-container" id="product-container">
+    <!-- Product 1 -->
+    <div class="product" data-name="Essential Logo Ebm Tee" data-brand="superdry" data-category="tshirts"
+      data-price="799" data-discount="10" data-color="yellow" data-occasion="casual" data-material="cotton"
+      onclick="window.location.href='product1.html'">
+
+      <div class="image-slider">
+        <img src="../images/products/Tshirts/T1.jpg.webp" alt="Slide 1">
+        <img src="../images/products/1/T7BYZbCNoM-410479215_5fa_MODEL7.jpg.webp" alt="Slide 2">
+      </div>
+      <h3 class="brand">SUPERDRY</h3>
+      <p class="product-name">Essential Logo Ebm Tee</p>
+      <p class="price">&#8377; 799</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product" data-name="Neon Travel Graphic Tee" data-brand="superdry" data-category="tshirts"
+    data-price="799" data-discount="10" data-color="white" data-occasion="casual" data-material="cotton" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Tshirts/T2.jpg.webp" class="slide" alt="Product 2 Image 1">
+      </div>
+      <h3 class="brand">SUPERDRY</h3>
+      <p class="product-name">Neon Travel Graphic Tee</p>
+      <p class="price">&#8377; 799</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product" data-category="tshirts" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Tshirts/T3.avif" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">PUMA</h3>
+      <p class="product-name">Active Men's Crew Neck Tee</p>
+      <p class="price">₹ 1,259</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product" data-category="tshirts" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Tshirts/T4.avif" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">PUMA</h3>
+      <p class="product-name">Nostalgia Unisex Relaxed Fit Jersey</p>
+      <p class="price">₹ 2,679</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product" data-category="tshirts" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Tshirts/T5.jpg" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">KAPPA</h3>
+      <p class="product-name">Authentic Estessi Grey Mel-White Antique</p>
+      <p class="price">₹ 999</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="product" data-category="tshirts" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Tshirts/T6.webp" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">Nike</h3>
+      <p class="product-name">Nike Sportswear Men's T-Shirt</p>
+      <p class="price">₹ 1,199</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <!-- Product 7 -->
+    <div class="product" data-category="tshirts" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Tshirts/T7.jpg.avif" class="slide" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">DNMX</h3>
+      <p class="product-name">Men Hollywood Hills Regular Fit Crew-Neck T-Shirt</p>
+      <p class="price">₹199</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <!-- Product 8 -->
+    <div class="product" data-category="tshirts" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Tshirts/T8.jpg.avif" class="slide" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">H&M</h3>
+      <p class="product-name">OverSized Fit Tshirt</p>
+      <p class="price">₹899</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <!-- Product 9 -->
+    <div class="product" data-category="cshirts" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Shirts/S1/YkNos9zLEf-410457813_56t_MODEL.jpg.webp" class="slide"
+          alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">SUPERDRY</h3>
+      <p class="product-name">PREMIUM STRETCH L/S SHIRT</p>
+      <p class="price">₹ 1,999</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <!-- Product 10 -->
+    <div class="product" data-category="cshirts" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Shirts/S2/7_d455f294-c785-40fe-ab9a-8f8525af1518_720x.jpg.webp" class="slide"
+          alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">USPA</h3>
+      <p class="product-name">Solid Slim Fit Shirt</p>
+      <p class="price">₹ 2,699</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <!-- Product 11 -->
+    <div class="product" data-category="cshirts" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Shirts/S3/1_8a034f7b-731c-4a38-8faa-a167c2ae9cdf_720x.jpg.webp" class="slide"
+          alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">USPA</h3>
+      <p class="product-name">Regular Fit Floral Printed Shirt</p>
+      <p class="price">₹ 2,499</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+
+    <div class="product" data-category="sshirts" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Sweatshirts/Sh1/596380313_01_Styleshot.jpg.avif" class="slide"
+          alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">LEVIS</h3>
+      <p class="product-name">MEN'S SOLID CREW NECK SWEATSHIRT</p>
+      <p class="price">₹1,539</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="fshirts" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/formalshirts/fs1/39713054-14736741.jpg.avif" class="slide" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">PETER ENGLAND</h3>
+      <p class="product-name">MEN NAVY SLIM FIT SHIRT</p>
+      <p class="price">₹1,799</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+
+    <div class="product" data-category="cshirts" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Shirts/S4.jpg" class="slide" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">PETER ENGLAND</h3>
+      <p class="product-name">MEN WHITE SLIM FIT STRIPE SHIRT</p>
+      <p class="price">₹1,799</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="fshirts" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/formalshirts/fs2.jpg" class="slide" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">PETER ENGLAND</h3>
+      <p class="product-name">MEN BLUE SLIM FIT SHIRT</p>
+      <p class="price">₹1,799</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="fshirts" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/formalshirts/fs3.jpg" class="slide" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">PETER ENGLAND</h3>
+      <p class="product-name">MEN WHITE SLIM FIT SHIRT</p>
+      <p class="price">₹1,799</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="fshirts" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/formalshirts/fs4.jpg" class="slide" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">PETER ENGLAND</h3>
+      <p class="product-name">MEN GREY SLIM FIT SHIRT</p>
+      <p class="price">₹1,799</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="sshirts" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Sweatshirts/Sh2.jpg.webp" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide3" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">LEVIS</h3>
+      <p class="product-name">REGULAR FIT ROUND NECK SOLID PATTERN SWEATSHIRT</p>
+      <p class="price">₹1,199</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="sshirts" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Sweatshirts/sh3.jpg" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide3" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">PEPE JEANS</h3>
+      <p class="product-name">Grey Stripes Full Sleeve Sweatshirt</p>
+      <p class="price">₹2,099</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+
+    <div class="product" data-category="jeans" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Jeans/J1.jpg" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide3" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">PEPE JEANS</h3>
+      <p class="product-name">Men Blue Mid Rise Skinny Ankle Length </p>
+      <p class="price">₹4,599</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="jeans" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Jeans/J2.webp" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide3" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">LEVIS</h3>
+      <p class="product-name">Men's Regular Fit Black Jeans</p>
+      <p class="price">₹3,399</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="jeans" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Jeans/J3.webp" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide3" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">LEVIS</h3>
+      <p class="product-name">Men's 511 Slim Fit White Jeans</p>
+      <p class="price">₹3,196</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="jeans" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Jeans/J4.jpg" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide3" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">PEPE</h3>
+      <p class="product-name">Vapour Grey Mid Rise Jeans</p>
+      <p class="price">₹2,759</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="jeans" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Jeans/J5.webp" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide3" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">USPA</h3>
+      <p class="product-name">Brandon Slim Tapered Fit Blue Jeans
+      </p>
+      <p class="price">₹ 3,799</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="jeans" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Jeans/J6.jpeg" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide3" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">WROGN</h3>
+      <p class="product-name">
+        Medstone Faded Anti Fit Jeans</p>
+      <p class="price">₹2,639</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="jeans" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Jeans/J7.jpg" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide3" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">FLYING MACHINE</h3>
+      <p class="product-name">
+        Mid Rise 90s Loose Fit Jeans</p>
+      <p class="price">₹2,099</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="jeans" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Jeans/J8.webp" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide3" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">BENETTON</h3>
+      <p class="product-name">MEN SOLID CARROT FIT JEANS</p>
+      <p class="price">₹1,574</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="shorts" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Shorts/Sho1.jpg" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide3" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">URB_N</h3>
+      <p class="product-name">Men Solid Shorts</p>
+      <p class="price">₹699</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="shorts" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Shorts/Sho2.jpg" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide3" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">URB_N</h3>
+      <p class="product-name">Men Solid Shorts</p>
+      <p class="price">₹699</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="shorts" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Shorts/Sho3.webp" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide3" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">BOSSINI</h3>
+      <p class="product-name">Men Solid Shorts</p>
+      <p class="price">₹899</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="shorts" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Shorts/Sho4.webp" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide3" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">WROGN</h3>
+      <p class="product-name">Classic Khaki Denim Shorts</p>
+      <p class="price">₹1,249</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="shorts" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Shorts/Sho5.webp" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide3" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">USPA</h3>
+      <p class="product-name">Slim Straight Fit Twill Shorts</p>
+      <p class="price">₹ 1,149</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="shorts" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Shorts/Sho6.avif" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide3" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">PUMA</h3>
+      <p class="product-name">Men's Woven 7" Training ShortsPuma Black</p>
+      <p class="price">₹ 939</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="shorts" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Shorts/Sho7.webp" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide3" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">NIKE</h3>
+      <p class="product-name">Bried lined versatile shorts</p>
+      <p class="price">₹ 2095</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="tracks" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Tracks/Tr1.webp" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide3" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">NIKE</h3>
+      <p class="product-name">Mens Dri Fit Openhem Trouser</p>
+      <p class="price">₹ 2795</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="tracks" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Tracks/Tr2.avif" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide3" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">PUMA</h3>
+      <p class="product-name">Mens Woven Regular Fit Trackpants</p>
+      <p class="price">₹ 1369</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="tracks" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Tracks/Tr3.avif" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide3" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">ADDIDAS</h3>
+      <p class="product-name">All Season TZ Pants</p>
+      <p class="price">₹ 1079</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="ctrouser" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Ctrousers/Ctr1.webp" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide3" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">CROCODILE</h3>
+      <p class="product-name">Textured Stretch Slim fit Pants</p>
+      <p class="price">₹ 2000</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="jogger" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Joggers/J1.jpeg" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide3" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">Wrogn</h3>
+      <p class="product-name">Solid Beige Regular Fit Jogger</p>
+      <p class="price">₹ 1049</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="sneaker" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Sneakers/Sne1.avif" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide3" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">UNDER ARMOUR</h3>
+      <p class="product-name">UA Phantom 4 Armour Shoes</p>
+      <p class="price">₹14,999</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="sneaker" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Sneakers/Sne2.avif" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide3" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">UNDER ARMOUR</h3>
+      <p class="product-name">UA Charged Assert 10 4E</p>
+      <p class="price">₹5,999</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="sneaker" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Sneakers/Sne3.avif" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide3" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">PUMA</h3>
+      <p class="product-name">Disperse XT 2</p>
+      <p class="price">₹3,299</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="flipflop" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Flipflop/Fl1.jpg.webp" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">CROCS</h3>
+      <p class="product-name">Yukon Vista 2</p>
+      <p class="price">₹4,995</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="flipflop" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/Flipflop/Fl2.avif" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">PUMA</h3>
+      <p class="product-name">Galaxy Comfort Mens FlipFlop</p>
+      <p class="price">₹1,259</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="cshoes" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/CasualShoes/Cas1.webp" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">NIKE</h3>
+      <p class="product-name">Nike Court Vision LOw</p>
+      <p class="price">₹7,095</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+    <div class="product" data-category="cshoes" onclick="window.location.href='product2.html'">
+      <div class="image-slider">
+        <img src="../images/products/CasualShoes/Cas2.avif" class="slide3" alt="Product 2 Image 1">
+        <img src="product2_img2.jpg" class="slide" alt="Product 2 Image 2" style="display:none;">
+      </div>
+      <h3 class="brand">PUMA</h3>
+      <p class="product-name">Scuderia Ferrari Drift Cat 5 Ultra II Unisex Sneakers</p>
+      <p class="price">₹4,059</p>
+      <button class="wishlist"><i class="fa-regular fa-heart" id="wish"></i></button>
+    </div>
+
+
+
+
+
+
+
+  </div>
+
+</body>
+
+<div class="footerclass">
+  <footer class="desktop-footerContainer">
+    <div>
+      <div class="desktop-genericInfo">
+        <div class="desktop-shopLinks">
+          <p class="desktop-gInfoTitle"><a href="/?src=onlineShopping"> ONLINE
+              SHOPPING </a></p><a href="/shop/men"> Men
+          </a><br><a href="/shop/women">Women
+          </a><br><a href="/shop/home-living">
+            Home &amp; Living
+          </a><br><a href="/personal-care">
+            Beauty
+          </a><br><a href="/giftcard">Gift Cards</a><a href="/myntrainsider?cache=false">Myntra Insider</a>
+        </div>
+
+        <div class="usefullinks">
+          <p class="desktop-gInfoTitle"> USEFUL LINKS </p><a data-refreshpage="true" href="http://blog.myntra.com/">
+            Blog
+          </a><br><a data-refreshpage="true" href="https://careers.myntra.com">
+            Careers
+          </a><br><a data-refreshpage="true" href="/sitemap">Site
+            Map
+          </a><br><a data-refreshpage="true" href="/corp-info">
+            Corporate
+            Information </a><br><a data-refreshpage="true" href="/security/whitehat">
+            Whitehat
+          </a><br><a data-refreshpage="true" href="https://www.cleartrip.com/">
+            Cleartrip
+          </a>
+        </div>
+        <div class="desktop-customerPolicies">
+          <p class="desktop-gInfoTitle"> CUSTOMER POLICIES </p>
+          <a data-refreshpage="true" href="/contactus">
+            Contact Us
+          </a><br><a data-refreshpage="true" href="/faqs">
+            FAQ
+          </a><br><a data-refreshpage="true" href="/tac">
+            T&amp;C
+          </a><br><a data-refreshpage="true" href="/termsofuse"> Terms Of
+            Use </a><br><a data-refreshpage="true" href="/my/orders">
+            Track Orders
+          </a><br><a data-refreshpage="true" href="/faqs#shipping">
+            Shipping
+          </a><br><a data-refreshpage="true" href="/faqs#cancel">
+            Cancellation
+          </a><br><a data-refreshpage="true" href="/faqs#returns">
+            Returns
+          </a><br><a data-refreshpage="true" href="/privacypolicy"> Privacy
+            policy </a>
+        </div>
+        <div class="desktop-appExperience">
+          <p class="desktop-gInfoTitle"> EXPERIENCE ON MOBILE </p>
+          <div class="desktop-downLinkContainer"><a
+              href="https://play.google.com/store/apps/details?id=com.myntra.android"><img
+                class="desktop-androidDownLink"
+                src="https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png"></a><a
+              href="https://itunes.apple.com/in/app/myntra-indias-fashion-store/id907394059"><img
+                class="desktop-iOSDownLink"
+                src="https://constant.myntassets.com/web/assets/img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png"></a>
+          </div>
+          <div class="desktop-keepInTouch"> KEEP IN TOUCH </div><a href="https://www.facebook.com/myntra"
+            class="desktop-facebook"><img
+              src="https://constant.myntassets.com/web/assets/img/d2bec182-bef5-4fab-ade0-034d21ec82e31574604275433-fb.png"
+              style="width: 20px; height: 20px;"></a><a href="https://twitter.com/myntra" class="desktop-twitter"><img
+              src="https://constant.myntassets.com/web/assets/img/f10bc513-c5a4-490c-9a9c-eb7a3cc8252b1574604275383-twitter.png"
+              style="width: 20px; height: 20px;"></a><a href="https://www.youtube.com/user/myntradotcom"
+            class="desktop-youtube"><img
+              src="https://constant.myntassets.com/web/assets/img/a7e3c86e-566a-44a6-a733-179389dd87111574604275355-yt.png"
+              style="width: 28px; height: 20px;"></a><a href="https://www.instagram.com/myntra"
+            class="desktop-instagram"><img
+              src="https://constant.myntassets.com/web/assets/img/b4fcca19-5fc1-4199-93ca-4cae3210ef7f1574604275408-insta.png"
+              style="width: 20px; height: 22px; position: relative; top: 1px;"></a>
+        </div>
+        <div class="desktop-promises">
+        </div>
+      </div>
+    </div>
+    <div class="desktop-fInfoSection">
+      <br>
+      <div class="desktop-contact"> <br>In case of any concern,
+        <a href="/contactus"> Contact Us </a>
+      </div>
+      <div class="desktop-copywrite"> <br>©
+        2025 www.zephyr.in.
+        All rights reserved.</div>
+    </div>
+    <address class="index-lcContainer">
+      <p class="index-lcHeader"> Registered Office Address </p>
+      <div class="index-lcInfoContainer">
+        <div class="index-lcAddress">46/1,
+          <br>Marai Malai Adigal nagar,
+          <br>Peelamedu Pudur,
+          <br>Coimbatore – 641004, India
+        </div>
+        <div class="index-lcLegalInfo">
+          <p> Telephone: <a href="tel:+918061561999" class="index-lcTelephone index-highlightText">+91 8778119280</a>
+          </p>
+        </div>
+      </div>
+    </address>
+    <div class="desktop-gyanContainer">
+
+
+      <h3><strong>SHOP ONLINE AT ZEPHYR WITH COMPLETE CONVENIENCE</strong></h3>
+      <p style="font-size: 14px;">At Zephyr, we bring you a seamless and hassle-free shopping experience with just a
+        few clicks. Our
+        user-friendly website and app ensure smooth navigation, making it easy to find your perfect style.
+        With a wide range of high-quality cotton t-shirts and trendy fashion essentials, we guarantee comfort and
+        style at affordable prices. Our secure payment options and fast delivery ensure a stress-free shopping
+        experience.
+        Customer satisfaction is our top priority, and our dedicated support team is always ready to assist you with
+        any queries. Plus, enjoy exclusive discounts and exciting deals when you shop with us.
+        Shop at Zephyr today and upgrade your wardrobe effortlessly!</p><br>
+    </div>
+    <br>
+    <div class="dtls">
+      <img src="../images/paymenticons/american-express.png" alt="amex">
+      <img src="../images/paymenticons/206684_visa_method_card_payment_icon.png" alt="visa">
+      <img src="../images/paymenticons/701549_bank_card_payment_rupay_icon.png" alt="rupay">
+      <img src="../images/paymenticons/7123945_logo_pay_google_gpay_icon.png" alt="gpay">
+      <img src="../images/paymenticons/paypal.png" alt="pp">
+    </div>
+
+</div>
+</footer>
+</div>
+</body>
+
+</html>
