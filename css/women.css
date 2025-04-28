@@ -1,0 +1,417 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+  align-items: center;
+  position: fixed;
+  top: 2px;
+  z-index: 10;
+}
+
+.navleft a {
+  text-decoration: none;
+  color: rgb(48, 47, 47);
+}
+
+img {
+  width: 60px;
+  margin-right: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 94%;
+  margin: 0 auto;
+}
+
+.navleft,
+.navright {
+  display: flex;
+  align-items: center;
+}
+
+.navleft ul {
+  list-style: none;
+  display: flex;
+}
+
+.navleft ul li {
+  position: relative;
+  margin: 0 15px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.navleft ul li a {
+  text-decoration: none;
+  color: rgb(48, 47, 47);
+  font-size: 14px;
+}
+
+.mendrop {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 700px;
+  background: rgb(0, 0, 0);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: none;
+  padding: 15px;
+  z-index: 1000;
+  color: white;
+}
+
+/* Multi-Column Dropdown */
+.mendrop ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.mendrop .column {
+  width: 33%;
+}
+
+.mendrop h4 {
+  color: #ffffff;
+  /* Myntra Pink */
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.mendrop a {
+  display: block;
+  color: #61615f;
+  font-size: 13px;
+  padding: 5px 0;
+  text-decoration: none;
+}
+
+.mendrop a:hover {
+  color: white;
+}
+
+/* Show Dropdown on Hover */
+.navleft ul li:hover .mendrop {
+  display: block;
+}
+
+.search {
+  width: 350px;
+  line-height: 40px;
+  border-radius: 4px;
+  background: #f0eeee;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.search input {
+  background: transparent;
+  border: 0;
+  outline: none;
+  width: 85%;
+  font-size: 14px;
+  height: 20px;
+}
+
+.search i {
+  font-size: 14px;
+  color: #727270;
+  margin-right: 15px;
+  margin-left: 10px;
+}
+
+.std {
+  position: relative;
+}
+
+.std span {
+  position: absolute;
+  color: rgb(238, 9, 47);
+  top: -5px;
+  left: 55px;
+  font-size: 10px;
+}
+
+.navright div {
+  margin: 0 10px;
+  text-align: center;
+}
+
+.navright div p {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.navright div i {
+  font-size: 18px;
+}
+
+.off {
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-top: 130px;
+}
+
+.offer {
+  height: 200px;
+  width: 100%;
+}
+
+.leftsort {
+  width: 340px;
+  float: left;
+}
+
+.filter-section {
+  width: 300px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+}
+
+.filter-category {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  align-items: center;
+  background: var(--bgColor3);
+}
+
+.dropdown-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  line-height: 21px;
+  color: #000;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: HelveticaNeueStd, sans-serif;
+  background-color: transparent;
+}
+
+.drpicon {
+  float: right;
+  height: 21px;
+  width: 21px;
+}
+
+.dropdown-content {
+  display: none;
+  padding: 10px;
+  background: #fafafa;
+  border-radius: 5px;
+}
+
+.show {
+  display: block;
+}
+
+.dropdown-content label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type=range] {
+  width: 100%;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 30px;
+}
+
+.product {
+  width: 250px;
+  text-align: left;
+  overflow: hidden;
+  padding: 10px;
+  border: none;
+  position: relative;
+}
+
+.image-slider {
+  display: flex;
+  width: 100%;
+  height: 298px;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-slider img {
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.brand {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.slide3 {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.product-name {
+  font-size: 14px;
+  color: #504a42;
+  text-transform: capitalize;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  font-family: HelveticaNeueLight, sans-serif;
+  word-break: break-word;
+}
+
+.price {
+  font-size: 13px;
+  font-weight: bold;
+  color: #504a42;
+}
+
+.wishlist {
+  position: absolute;
+  top: 10px;
+  right: 9px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #e60000;
+}
+
+.wish {
+  z-index: 99;
+}
+
+.fa-heart {
+  padding-right: 8px;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  z-index: 10;
+  font-size: 18px;
+}
+
+.prev {
+  left: 5px;
+}
+
+.next {
+  right: 5px;
+}
+
+.footerclass {
+  position: relative;
+  z-index: 5;
+  padding: 30px 0px 40px 0px;
+  background: black;
+}
+
+.desktop-gInfoTitle {
+  font-size: 17px;
+  width: 200px;
+  text-decoration: underline;
+}
+
+.desktop-shopLinks {
+  float: left;
+  width: 155px;
+  vertical-align: top;
+  padding-right: 20px;
+  font-size: 15px;
+}
+
+.usefullinks {
+  float: left;
+  width: 200px;
+  vertical-align: top;
+  padding-right: 20px;
+  padding-left: 50px;
+}
+
+.desktop-customerPolicies {
+  width: 250px;
+  float: left;
+  padding-left: 100px;
+}
+
+.desktop-appExperience {
+  vertical-align: top;
+  padding-right: 250px;
+  padding-left: 90px;
+  width: 510px;
+  font-size: 15px;
+  line-height: 19px;
+  float: right;
+  padding-top: 5px;
+}
+
+.desktop-fInfoSection {
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.index-lcContainer {
+  margin: 30px 0;
+  padding: 20px 0 0;
+  border-top: 1px solid #eaeaec;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 20px;
+}
+
+.desktop-gyanContainer {
+  border-bottom: 1px solid white;
+}
+
+footer {
+  padding-left: 200px;
+  color: white;
+  background-color: black;
+}
+
+.footerclass a {
+  text-decoration: none;
+  color: white;
+}
+
+.dlts img {
+  display: flex;
+  height: 50px;
+}/*# sourceMappingURL=women.css.map */
