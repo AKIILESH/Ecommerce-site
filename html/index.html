@@ -1,1 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zephyr Store</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <script src="../js/ecom.js"></script>
+</head>
+
+
+<body>
+  <header>
+    <nav>
+      <div class="navleft">
+        <a href="ecom.html"><img src="../images/LOGO.jpeg" alt="Companylogo"></a>
+
+        <ul class="navmenu">
+          <li>
+            <a href="men.html">MEN</a>
+            <div class="mendrop">
+              <ul>
+                <div class="column">
+                  <h4>Topwear</h4>
+                  <a href="men.html?category=tshirts">T-Shirts</a>
+                  <a href="men.html?category=cshirts">Casual Shirts</a>
+                  <a href="men.html?category=fshirts">Formal Shirts</a>
+                  <a href="men.html?category=sshirts">Sweatshirts</a>
+                </div>
+                <div class="column">
+                  <h4>Bottomwear</h4>
+                  <a href="#">Jeans</a>
+                  <a href="#">Casual Trousers</a>
+                  <a href="#">Shorts</a>
+                  <a href="#">Joggers</a>
+                  <a href="#">Tracks</a>
+                </div>
+                <div class="column">
+                  <h4>Footwear</h4>
+                  <a href="#">Casual Shoes</a>
+                  <a href="#">Sneakers</a>
+                  <a href="#">Flip Flops</a>
+                </div>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="women.html">WOMEN</a>
+            <div class="mendrop">
+              <ul>
+                <div class="column">
+                  <h4>Topwear</h4>
+                  <a href="#">T-Shirts</a>
+                  <a href="#">Casual Shirts</a>
+                  <a href="#">Sweatshirts</a>
+                  <a href="#">Dresses</a>
+                </div>
+                <div class="column">
+                  <h4>Bottomwear</h4>
+                  <a href="#">Jeans</a>
+                  <a href="#">Tracks</a>
+                  <a href="#">Joggers</a>
+                </div>
+                <div class="column">
+                  <h4>Footwear</h4>
+                  <a href="#">Casual Shoes</a>
+                  <a href="#">Sneakers</a>
+                  <a href="#">Flip Flops</a>
+                </div>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">TECH</a>
+            <div class="mendrop">
+              <ul>
+                <div class="column">
+                  <h4>Watches</h4>
+                  <a href="#">Smart Watches</a>
+                  <a href="#">Anologue Watches</a>
+                  <a href="#">Watch Straps</a>
+                </div>
+                <div class="column">
+                  <h4>Audio</h4>
+                  <a href="#">Headphones</a>
+                  <a href="#">Speakers</a>
+                  <a href="#">Wireless</a>
+                  <a href="#">Mirrors</a>
+                  <a href="#">Vases</a>
+                </div>
+                <div class="column">
+                  <h4>Bath</h4>
+                  <a href="#">Bath Towels</a>
+                  <a href="#">Bathroom Accessories</a>
+                  <a href="#">Bath Robes</a>
+                </div>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">HOME & LIVING</a>
+            <div class="mendrop">
+              <ul>
+                <div class="column">
+                  <h4>Bed & Furnishing</h4>
+                  <a href="#">Bed Linen</a>
+                  <a href="#">Blankets</a>
+                  <a href="#">Pillow & Pillowcovers</a>
+                  <a href="#">Comforters</a>
+                </div>
+                <div class="column">
+                  <h4>Home Decor</h4>
+                  <a href="#">Plants</a>
+                  <a href="#">Aromas</a>
+                  <a href="#">Clocks</a>
+                  <a href="#">Mirrors</a>
+                  <a href="#">Vases</a>
+                </div>
+                <div class="column">
+                  <h4>Bath</h4>
+                  <a href="#">Bath Towels</a>
+                  <a href="#">Bathroom Accessories</a>
+                  <a href="#">Bath Robes</a>
+                </div>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">BEAUTY</a></li>
+        </ul>
+      </div>
+
+      <div class="navright">
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="searchInput" placeholder="Search for products,brands and more...">
+        </div>
+
+        <div>
+          <a href="http://localhost:8080/LOGIN_PAGE/register.jsp"><i class="fa-regular fa-user"></i></a>
+          <a href="http://localhost:8080/LOGIN_PAGE/register.jsp"></a>
+          <p>Profile</p>
+        </div>
+        <div>
+          <i class="fa-regular fa-heart"></i>
+          <p>Wishlist</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-bag-shopping"></i>
+          <p>Bag</p>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <div class="off">
+    <img draggable="false" class="offer" src="../images/Red and Black Modern Black Friday Banner.png" srcset="">
+  </div>
+  <br><br>
+
+  <div class="sec2">
+    <div class="shopby gender">
+      <div class="bymen">
+        <a href="men.html"><img src="../images/gender/bymen.webp" alt="Shop men"></a>
+      </div>
+
+      <div class="bywomen">
+        <a href="women.html"><img src="../images/gender/bywomen.webp" alt="Shop women"></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="carousel-container">
+    <div class="carousel-wrapper">
+      <div class="carousel">
+        <img src="../images/Carousel/USPA b1.jpg.webp" class="carousel-image" alt="Slide 1">
+        <img src="../images/Carousel/PEPE b2.webp" class="carousel-image" alt="Slide 2">
+        <img src="../images/Carousel/TOMMY b3.jpg.webp" class="carousel-image" alt="Slide 3">
+        <img src="../images/Carousel/SUPDRY b4.jpeg.webp" class="carousel-image" alt="Slide 4">
+      </div>
+    </div>
+
+    <div class="dots-container">
+      <span class="dot" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-- Next & Prev Buttons -->
+    <div class="slb">
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+  </div>
+
+
+
+  <div class="glidertitle">
+    <pP class="gltext">Shop by Category</p>
+      <br>
+      <h4 class="text-banner-subtitle"></h4>
+  </div>
+
+  <div class="glider-contain">
+    <div class="glidercont">
+      <div class="gliderwrap">
+        <img src="../images/glider/shirts.webp" alt="Shirts" class="gliderimg">
+        <a href="men.html?category=cshirts"><button class="gliderbtn">Shirts</button></a>
+      </div>
+
+      <div class="gliderwrap">
+        <img src="../images/glider/tshirts.webp" alt="T-Shirts" class="gliderimg">
+        <a href="men.html?category=tshirts"><button class="gliderbtn">TShirts</button></a>
+      </div>
+
+      <div class="gliderwrap">
+        <img src="../images/glider/Polos.webp" alt="Polos" class="gliderimg">
+        <button class="gliderbtn">Polos</button>
+      </div>
+
+      <div class="gliderwrap">
+        <img src="../images/glider/DENIMS.webp" alt="Denims" class="gliderimg">
+        <button class="gliderbtn">Denims</button>
+      </div>
+
+      <div class="gliderwrap">
+        <img src="../images/glider/personalcare.jpeg.webp" alt="Sweatshirts" class="gliderimg">
+        <button class="gliderbtn">Personal care</button>
+      </div>
+
+      <div class="gliderwrap">
+        <img src="../images/glider/dresses.webp" alt="Dresses" class="gliderimg">
+        <a href="women.html?category=dress"><button class="gliderbtn">Dresses</button></a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <br><br>
+  <div class="videobanner">
+    <video autoplay loop muted class="vb">
+      <source src="../images/KAPPA b3.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="glidertitle">
+    <pP class="gltext">SELECT YOUR SPORT, FIND YOUR GEAR, AND GET IN THE GAME!</p>
+      <br>
+      <h4 class="text-banner-subtitle"></h4>
+  </div>
+
+  <div class="sportcont">
+    <div class="sportwrap">
+      <img src="../images/sport/basketball.avif" alt="Basketball" class="sportimg">
+      <button class="sportbtn">Basketball</button>
+    </div>
+
+    <div class="sportwrap">
+      <img src="../images/sport/football.avif" alt="Football" class="sportimg">
+      <a href="products.html?sport=football"><button class="sportbtn">football</button></a>
+    </div>
+
+    <div class="sportwrap">
+      <img src="../images/sport/tennis.avif" alt="Tennis" class="sportimg">
+      <button class="sportbtn">tennis</button>
+    </div>
+
+    <div class="sportwrap">
+      <img src="../images/sport/fitness.avif" alt="Cricket" class="sportimg">
+      <button class="sportbtn">Fitness</button>
+    </div>
+  </div>
+
+  <div class="footerclass">
+    <footer class="desktop-footerContainer">
+      <div>
+        <div class="desktop-genericInfo">
+          <div class="desktop-shopLinks">
+            <p class="desktop-gInfoTitle"><a href="/?src=onlineShopping"> ONLINE
+                SHOPPING </a></p><a href="/shop/men"> Men
+            </a><br><a href="/shop/women">Women
+            </a><br><a href="/shop/home-living">
+              Home &amp; Living
+            </a><br><a href="/personal-care">
+              Beauty
+            </a><br><a href="/giftcard">Gift Cards</a><a href="/myntrainsider?cache=false">Myntra Insider</a>
+          </div>
+
+          <div class="usefullinks">
+            <p class="desktop-gInfoTitle"> USEFUL LINKS </p><a data-refreshpage="true" href="http://blog.myntra.com/">
+              Blog
+            </a><br><a data-refreshpage="true" href="https://careers.myntra.com">
+              Careers
+            </a><br><a data-refreshpage="true" href="/sitemap">Site
+              Map
+            </a><br><a data-refreshpage="true" href="/corp-info">
+              Corporate
+              Information </a><br><a data-refreshpage="true" href="/security/whitehat">
+              Whitehat
+            </a><br><a data-refreshpage="true" href="https://www.cleartrip.com/">
+              Cleartrip
+            </a>
+          </div>
+          <div class="desktop-customerPolicies">
+            <p class="desktop-gInfoTitle"> CUSTOMER POLICIES </p>
+            <a data-refreshpage="true" href="/contactus">
+              Contact Us
+            </a><br><a data-refreshpage="true" href="/faqs">
+              FAQ
+            </a><br><a data-refreshpage="true" href="/tac">
+              T&amp;C
+            </a><br><a data-refreshpage="true" href="/termsofuse"> Terms Of
+              Use </a><br><a data-refreshpage="true" href="/my/orders">
+              Track Orders
+            </a><br><a data-refreshpage="true" href="/faqs#shipping">
+              Shipping
+            </a><br><a data-refreshpage="true" href="/faqs#cancel">
+              Cancellation
+            </a><br><a data-refreshpage="true" href="/faqs#returns">
+              Returns
+            </a><br><a data-refreshpage="true" href="/privacypolicy"> Privacy
+              policy </a>
+          </div>
+          <div class="desktop-appExperience">
+            <p class="desktop-gInfoTitle"> EXPERIENCE ON MOBILE </p>
+            <div class="desktop-downLinkContainer"><a
+                href="https://play.google.com/store/apps/details?id=com.myntra.android"><img
+                  class="desktop-androidDownLink"
+                  src="https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png"></a><a
+                href="https://itunes.apple.com/in/app/myntra-indias-fashion-store/id907394059"><img
+                  class="desktop-iOSDownLink"
+                  src="https://constant.myntassets.com/web/assets/img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png"></a>
+            </div>
+            <div class="desktop-keepInTouch"> KEEP IN TOUCH </div><a href="https://www.facebook.com/myntra"
+              class="desktop-facebook"><img
+                src="https://constant.myntassets.com/web/assets/img/d2bec182-bef5-4fab-ade0-034d21ec82e31574604275433-fb.png"
+                style="width: 20px; height: 20px;"></a><a href="https://twitter.com/myntra" class="desktop-twitter"><img
+                src="https://constant.myntassets.com/web/assets/img/f10bc513-c5a4-490c-9a9c-eb7a3cc8252b1574604275383-twitter.png"
+                style="width: 20px; height: 20px;"></a><a href="https://www.youtube.com/user/myntradotcom"
+              class="desktop-youtube"><img
+                src="https://constant.myntassets.com/web/assets/img/a7e3c86e-566a-44a6-a733-179389dd87111574604275355-yt.png"
+                style="width: 28px; height: 20px;"></a><a href="https://www.instagram.com/myntra"
+              class="desktop-instagram"><img
+                src="https://constant.myntassets.com/web/assets/img/b4fcca19-5fc1-4199-93ca-4cae3210ef7f1574604275408-insta.png"
+                style="width: 20px; height: 22px; position: relative; top: 1px;"></a>
+          </div>
+          <div class="desktop-promises">
+          </div>
+        </div>
+      </div>
+      <div class="desktop-fInfoSection">
+        <br>
+        <div class="desktop-contact"> <br>In case of any concern,
+          <a href="/contactus"> Contact Us </a>
+        </div>
+        <div class="desktop-copywrite"> <br>©
+          2025 www.zephyr.in.
+          All rights reserved.</div>
+      </div>
+      <address class="index-lcContainer">
+        <p class="index-lcHeader"> Registered Office Address </p>
+        <div class="index-lcInfoContainer">
+          <div class="index-lcAddress">46/1,
+            <br>Marai Malai Adigal nagar,
+            <br>Peelamedu Pudur,
+            <br>Coimbatore – 641004, India
+          </div>
+          <div class="index-lcLegalInfo">
+            <p> Telephone: <a href="tel:+918061561999" class="index-lcTelephone index-highlightText">+91 8778119280</a>
+            </p>
+          </div>
+        </div>
+      </address>
+      <div class="desktop-gyanContainer">
+
+
+        <h3><strong>SHOP ONLINE AT ZEPHYR WITH COMPLETE CONVENIENCE</strong></h3>
+        <p style="font-size: 14px;">At Zephyr, we bring you a seamless and hassle-free shopping experience with just a
+          few clicks. Our
+          user-friendly website and app ensure smooth navigation, making it easy to find your perfect style.
+          With a wide range of high-quality cotton t-shirts and trendy fashion essentials, we guarantee comfort and
+          style at affordable prices. Our secure payment options and fast delivery ensure a stress-free shopping
+          experience.
+          Customer satisfaction is our top priority, and our dedicated support team is always ready to assist you with
+          any queries. Plus, enjoy exclusive discounts and exciting deals when you shop with us.
+          Shop at Zephyr today and upgrade your wardrobe effortlessly!</p><br>
+      </div>
+      <br>
+      <div class="dtls">
+        <img src="../images/paymenticons/american-express.png" alt="amex">
+        <img src="../images/paymenticons/206684_visa_method_card_payment_icon.png" alt="visa">
+        <img src="../images/paymenticons/701549_bank_card_payment_rupay_icon.png" alt="rupay">
+        <img src="../images/paymenticons/7123945_logo_pay_google_gpay_icon.png" alt="gpay">
+        <img src="../images/paymenticons/paypal.png" alt="pp">
+      </div>
+
+  </div>
+  </footer>
+  </div>
+</body>
+
+</html>
